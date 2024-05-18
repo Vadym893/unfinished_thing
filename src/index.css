@@ -11,3 +11,439 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.imgfoll {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.imageforpost {
+max-width: 300px;
+max-height: 300px;
+}
+
+.img_logo {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.class-a a {
+  color: #3c3c3c;
+}
+
+.h-color {
+  font-family: "Paytone One";
+  color: #202020;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  display: block;
+  margin: 11px 0 17px 0;
+  font-size: 80px;
+  line-height: 80px;
+  color: #706f6f;
+  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+  10px 20px 5px rgba(0,0,0,0.05),
+  -10px 20px 5px rgba(0,0,0,0.05);
+  letter-spacing: -4px;
+}
+#root{
+  width: 100%;
+  height: 100%;
+}
+button {
+  margin: 15px;
+}
+
+button a:hover {
+  color: black;
+}
+
+.wordsBlack:hover {
+  color: black;
+}
+.me-auto{
+  display: flex;
+  justify-content: space-around;
+
+  font-size: 1.2rem;
+  max-width: 90%;
+  min-width: 5%;
+}
+.logo{
+  max-width: 10%;
+  height: 5%;
+  z-index: 1;
+}
+
+body{
+  background-color: #17191a;
+}
+
+.background{
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+}
+
+form{
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255,255,255,0.13);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+}
+form *{
+  font-family: 'Poppins',sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+form h3{
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+
+label{
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+input{
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+::placeholder{
+  color: #e5e5e5;
+}
+button{
+  margin-top: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.social{
+margin-top: 30px;
+display: flex;
+}
+.social div{
+background: red;
+width: 150px;
+border-radius: 3px;
+padding: 5px 10px 10px 5px;
+background-color: rgba(255,255,255,0.27);
+color: #eaf0fb;
+text-align: center;
+}
+.social div:hover{
+background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+margin-left: 25px;
+}
+.social i{
+margin-right: 4px;
+}
+.content h2{ font-size:19px;}
+
+.box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36%;
+  height: 85%;
+  background: #111845a6;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgb(23, 32, 90);
+  border: 2px solid #2a3cad;
+  color: white;
+  padding: 20px;
+}
+
+.box:before{
+  content: '';
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background: rgba(255,255,255,0.1);
+  transition:0.5s;
+  pointer-events: none;
+}
+
+.box:hover:before{
+  left:-50%;
+  transform: skewX(-5deg);
+}
+
+
+.box .content{
+  position:absolute;
+  top:15px;
+  left:15px;
+  right:15px;
+  bottom:15px;
+  border:1px solid #f0a591;
+  padding:20px;
+  text-align:center;
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+  
+}
+
+.box span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  
+}
+
+.box span:nth-child(1)
+{
+  transform:rotate(0deg);
+}
+
+.box span:nth-child(2)
+{
+  transform:rotate(90deg);
+}
+
+.box span:nth-child(3)
+{
+  transform:rotate(180deg);
+}
+
+.box span:nth-child(4)
+{
+  transform:rotate(270deg);
+}
+
+.box span:before
+{
+  content: '';
+  position: absolute;
+  width:100%;
+  height: 2px;
+  background: #50dfdb;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+  transform:scaleX(0);
+  transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+    
+  }
+  
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: right;
+    
+  }
+  
+  
+} 
+.form-control{
+  margin-left: -2.5%;
+}
+.buttonNyInfo{
+  background-color: #080710;
+  border: white 1px solid;
+  width: 40%;
+  margin-left: 38%;
+  margin-top: 1%;
+}
+.idNickDiv{
+  color:whitesmoke;
+  display: flex;
+  justify-content:space-between;
+}
+.info{
+  margin-top: 2.5%;
+  margin-right: 40%;
+}
+.buttonsInfo{
+  margin-left: 30%;
+  margin-top: -20%;
+  height: 50%;
+}
+.imgHolder{
+  border-radius: 50%;
+
+}
+.boxBox{
+  margin-top: 10%;
+  width: 100%;
+  height: 100%;
+  background: #111845a6;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgb(23, 32, 90);
+  border: 2px solid #2a3cad;
+  color: white;
+  padding: 20px;
+}
+button{
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 4%;
+}
+.burronReg{
+  color: black;
+  margin-top: 5%;
+  margin-left: 0;
+  margin-right: 5%;
+}
+
+.burronCreatePost{
+  position: fixed;
+  width: 5.5%;
+  height: 10%;
+  background-color: grey;
+  border: 1px solid white;
+  margin: 0;
+  padding: 0;
+  border-radius: 100%;
+  left:90%;
+  top: 85%;
+  font-size: 2rem;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.TextPost{
+  color: whitesmoke;
+}
+.createPost{
+  margin-right:15%;
+}
+.card-bodyPost{
+  background-color: #202020;
+}
+
+.PostsHeader{
+  position: relative;
+  left:40%;
+  width: 10%;
+}
+.buttonLogOut{
+  width: 10%;
+  margin: 0;
+  background-color: #1c1e1f;
+}
+.postsJustify{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+.PostKeeper{
+
+  flex: 0 0 33.333333%;
+}
+.PostKeeperMain{
+  margin-top: 5%;
+  position: relative;
+  left:35%;
+  width: 30%;
+}
+.cont{
+  width: 30%;
+}
+.ButtonComment{
+  position: relative;
+  width: 40%;
+  left: 20%;
+}
+.containerInfo{
+  margin-top: 10%;
+}
+.inputNick{
+  width: 40%;
+}
+.createNick{
+  width: 30%;
+}
+.TextToLOg{
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.logDiv{
+  position: relative;
+  top:94%
+}
+.myinfoicon{
+  background-image: url(./img/user.svg);
+  width: 30px;
+  height: 30px;
+}
+.homeicon{
+  margin:0;
+  background-image: url(./img/icons8-home-page-64.png);
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+}
+.logOutIcon{
+  margin:0;
+  background-image: url(./img/icons8-log-out-24.png);
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+}
+.iconHolder{
+  margin-top: 2%;
+}
+.icon{
+  margin-left: 3%;
+  margin-right: 3%;
+}
